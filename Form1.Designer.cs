@@ -1,6 +1,6 @@
 ﻿namespace contact_tracing_program
 {
-    partial class Form1
+    partial class CTF
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,25 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CTF));
             this.CTtitle = new System.Windows.Forms.Label();
             this.CTlabelname = new System.Windows.Forms.Label();
             this.CTlabeldate = new System.Windows.Forms.Label();
             this.CTlabelnumber = new System.Windows.Forms.Label();
             this.CTlabelemail = new System.Windows.Forms.Label();
             this.CTlabelsex = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.nametextbox = new System.Windows.Forms.TextBox();
+            this.datetextbox = new System.Windows.Forms.TextBox();
+            this.numbertextbox = new System.Windows.Forms.TextBox();
+            this.emailtextbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.CTqrcodebox = new System.Windows.Forms.PictureBox();
+            this.CTqrcodebutton = new System.Windows.Forms.Button();
+            this.CTclearbutton = new System.Windows.Forms.Button();
+            this.CTsavebutton = new System.Windows.Forms.Button();
+            this.CTexitbutton = new System.Windows.Forms.Button();
+            this.CTlabelage = new System.Windows.Forms.Label();
+            this.agetextbox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.CTqrcodebox)).BeginInit();
             this.SuspendLayout();
             // 
             // CTtitle
@@ -55,9 +62,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CTtitle.AutoSize = true;
+            this.CTtitle.BackColor = System.Drawing.Color.Transparent;
             this.CTtitle.Font = new System.Drawing.Font("Courier New", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CTtitle.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.CTtitle.Location = new System.Drawing.Point(51, 22);
+            this.CTtitle.Location = new System.Drawing.Point(81, 22);
             this.CTtitle.Name = "CTtitle";
             this.CTtitle.Size = new System.Drawing.Size(418, 27);
             this.CTtitle.TabIndex = 0;
@@ -68,8 +76,9 @@
             // CTlabelname
             // 
             this.CTlabelname.AutoSize = true;
+            this.CTlabelname.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelname.Font = new System.Drawing.Font("Courier New", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.CTlabelname.Location = new System.Drawing.Point(39, 81);
+            this.CTlabelname.Location = new System.Drawing.Point(32, 86);
             this.CTlabelname.Name = "CTlabelname";
             this.CTlabelname.Size = new System.Drawing.Size(44, 17);
             this.CTlabelname.TabIndex = 1;
@@ -79,19 +88,21 @@
             // CTlabeldate
             // 
             this.CTlabeldate.AutoSize = true;
+            this.CTlabeldate.BackColor = System.Drawing.Color.Transparent;
             this.CTlabeldate.Font = new System.Drawing.Font("Courier New", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.CTlabeldate.Location = new System.Drawing.Point(39, 156);
+            this.CTlabeldate.Location = new System.Drawing.Point(32, 166);
             this.CTlabeldate.Name = "CTlabeldate";
-            this.CTlabeldate.Size = new System.Drawing.Size(98, 17);
+            this.CTlabeldate.Size = new System.Drawing.Size(44, 17);
             this.CTlabeldate.TabIndex = 2;
-            this.CTlabeldate.Text = "Birth Date";
+            this.CTlabeldate.Text = "Date";
             this.CTlabeldate.Click += new System.EventHandler(this.label2_Click);
             // 
             // CTlabelnumber
             // 
             this.CTlabelnumber.AutoSize = true;
+            this.CTlabelnumber.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelnumber.Font = new System.Drawing.Font("Courier New", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.CTlabelnumber.Location = new System.Drawing.Point(274, 81);
+            this.CTlabelnumber.Location = new System.Drawing.Point(313, 86);
             this.CTlabelnumber.Name = "CTlabelnumber";
             this.CTlabelnumber.Size = new System.Drawing.Size(134, 17);
             this.CTlabelnumber.TabIndex = 3;
@@ -100,8 +111,9 @@
             // CTlabelemail
             // 
             this.CTlabelemail.AutoSize = true;
+            this.CTlabelemail.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelemail.Font = new System.Drawing.Font("Courier New", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.CTlabelemail.Location = new System.Drawing.Point(274, 156);
+            this.CTlabelemail.Location = new System.Drawing.Point(313, 166);
             this.CTlabelemail.Name = "CTlabelemail";
             this.CTlabelemail.Size = new System.Drawing.Size(53, 17);
             this.CTlabelemail.TabIndex = 4;
@@ -111,46 +123,48 @@
             // CTlabelsex
             // 
             this.CTlabelsex.AutoSize = true;
+            this.CTlabelsex.BackColor = System.Drawing.Color.Transparent;
             this.CTlabelsex.Font = new System.Drawing.Font("Courier New", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.CTlabelsex.Location = new System.Drawing.Point(39, 235);
+            this.CTlabelsex.Location = new System.Drawing.Point(32, 325);
             this.CTlabelsex.Name = "CTlabelsex";
             this.CTlabelsex.Size = new System.Drawing.Size(35, 17);
             this.CTlabelsex.TabIndex = 5;
             this.CTlabelsex.Text = "Sex";
             // 
-            // textBox1
+            // nametextbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(39, 101);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(209, 23);
-            this.textBox1.TabIndex = 6;
+            this.nametextbox.Location = new System.Drawing.Point(32, 108);
+            this.nametextbox.Name = "nametextbox";
+            this.nametextbox.Size = new System.Drawing.Size(238, 22);
+            this.nametextbox.TabIndex = 6;
             // 
-            // textBox2
+            // datetextbox
             // 
-            this.textBox2.Location = new System.Drawing.Point(39, 176);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(209, 23);
-            this.textBox2.TabIndex = 7;
+            this.datetextbox.Location = new System.Drawing.Point(32, 186);
+            this.datetextbox.Name = "datetextbox";
+            this.datetextbox.Size = new System.Drawing.Size(238, 22);
+            this.datetextbox.TabIndex = 7;
             // 
-            // textBox3
+            // numbertextbox
             // 
-            this.textBox3.Location = new System.Drawing.Point(274, 101);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(215, 23);
-            this.textBox3.TabIndex = 8;
+            this.numbertextbox.Location = new System.Drawing.Point(313, 108);
+            this.numbertextbox.Name = "numbertextbox";
+            this.numbertextbox.Size = new System.Drawing.Size(245, 22);
+            this.numbertextbox.TabIndex = 8;
             // 
-            // textBox4
+            // emailtextbox
             // 
-            this.textBox4.Location = new System.Drawing.Point(274, 176);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(215, 23);
-            this.textBox4.TabIndex = 9;
+            this.emailtextbox.Location = new System.Drawing.Point(313, 188);
+            this.emailtextbox.Name = "emailtextbox";
+            this.emailtextbox.Size = new System.Drawing.Size(245, 22);
+            this.emailtextbox.TabIndex = 9;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(39, 127);
+            this.label1.Location = new System.Drawing.Point(32, 135);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(111, 12);
             this.label1.TabIndex = 10;
@@ -159,8 +173,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(274, 202);
+            this.label2.Location = new System.Drawing.Point(313, 215);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 12);
             this.label2.TabIndex = 11;
@@ -169,8 +184,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(274, 127);
+            this.label3.Location = new System.Drawing.Point(313, 135);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(68, 12);
             this.label3.TabIndex = 12;
@@ -179,8 +195,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(39, 200);
+            this.label4.Location = new System.Drawing.Point(32, 213);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 12);
             this.label4.TabIndex = 13;
@@ -189,66 +206,140 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(39, 255);
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox1.Location = new System.Drawing.Point(35, 346);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(52, 19);
+            this.checkBox1.Size = new System.Drawing.Size(58, 20);
             this.checkBox1.TabIndex = 14;
             this.checkBox1.Text = "Male";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.UseVisualStyleBackColor = false;
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(116, 255);
+            this.checkBox2.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox2.Location = new System.Drawing.Point(132, 346);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(64, 19);
+            this.checkBox2.Size = new System.Drawing.Size(74, 20);
             this.checkBox2.TabIndex = 15;
             this.checkBox2.Text = "Female";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // CTqrcodebox
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(151, 312);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(215, 203);
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
+            this.CTqrcodebox.BackColor = System.Drawing.SystemColors.Control;
+            this.CTqrcodebox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.CTqrcodebox.Location = new System.Drawing.Point(313, 251);
+            this.CTqrcodebox.Name = "CTqrcodebox";
+            this.CTqrcodebox.Size = new System.Drawing.Size(245, 216);
+            this.CTqrcodebox.TabIndex = 16;
+            this.CTqrcodebox.TabStop = false;
             // 
-            // button1
+            // CTqrcodebutton
             // 
-            this.button1.Location = new System.Drawing.Point(194, 521);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 23);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Generate QR Code";
-            this.button1.UseVisualStyleBackColor = true;
+            this.CTqrcodebutton.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CTqrcodebutton.Location = new System.Drawing.Point(365, 473);
+            this.CTqrcodebutton.Name = "CTqrcodebutton";
+            this.CTqrcodebutton.Size = new System.Drawing.Size(144, 25);
+            this.CTqrcodebutton.TabIndex = 17;
+            this.CTqrcodebutton.Text = "Generate QR Code";
+            this.CTqrcodebutton.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // CTclearbutton
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.CTclearbutton.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CTclearbutton.Location = new System.Drawing.Point(117, 405);
+            this.CTclearbutton.Name = "CTclearbutton";
+            this.CTclearbutton.Size = new System.Drawing.Size(68, 23);
+            this.CTclearbutton.TabIndex = 18;
+            this.CTclearbutton.Text = "Clear";
+            this.CTclearbutton.UseVisualStyleBackColor = true;
+            this.CTclearbutton.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // CTsavebutton
+            // 
+            this.CTsavebutton.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CTsavebutton.Location = new System.Drawing.Point(32, 405);
+            this.CTsavebutton.Name = "CTsavebutton";
+            this.CTsavebutton.Size = new System.Drawing.Size(68, 23);
+            this.CTsavebutton.TabIndex = 19;
+            this.CTsavebutton.Text = "Save";
+            this.CTsavebutton.UseVisualStyleBackColor = true;
+            // 
+            // CTexitbutton
+            // 
+            this.CTexitbutton.Location = new System.Drawing.Point(202, 405);
+            this.CTexitbutton.Name = "CTexitbutton";
+            this.CTexitbutton.Size = new System.Drawing.Size(68, 23);
+            this.CTexitbutton.TabIndex = 20;
+            this.CTexitbutton.Text = "Exit";
+            this.CTexitbutton.UseVisualStyleBackColor = true;
+            // 
+            // CTlabelage
+            // 
+            this.CTlabelage.AutoSize = true;
+            this.CTlabelage.BackColor = System.Drawing.Color.Transparent;
+            this.CTlabelage.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.CTlabelage.Location = new System.Drawing.Point(32, 251);
+            this.CTlabelage.Name = "CTlabelage";
+            this.CTlabelage.Size = new System.Drawing.Size(31, 16);
+            this.CTlabelage.TabIndex = 21;
+            this.CTlabelage.Text = "Age";
+            // 
+            // agetextbox
+            // 
+            this.agetextbox.Location = new System.Drawing.Point(32, 270);
+            this.agetextbox.Name = "agetextbox";
+            this.agetextbox.Size = new System.Drawing.Size(238, 22);
+            this.agetextbox.TabIndex = 22;
+            this.agetextbox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(32, 295);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 12);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "00 years old";
+            // 
+            // CTF
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(524, 809);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(589, 541);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.agetextbox);
+            this.Controls.Add(this.CTlabelage);
+            this.Controls.Add(this.CTexitbutton);
+            this.Controls.Add(this.CTsavebutton);
+            this.Controls.Add(this.CTclearbutton);
+            this.Controls.Add(this.CTqrcodebutton);
+            this.Controls.Add(this.CTqrcodebox);
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.emailtextbox);
+            this.Controls.Add(this.numbertextbox);
+            this.Controls.Add(this.datetextbox);
+            this.Controls.Add(this.nametextbox);
             this.Controls.Add(this.CTlabelsex);
             this.Controls.Add(this.CTlabelemail);
             this.Controls.Add(this.CTlabelnumber);
             this.Controls.Add(this.CTlabeldate);
             this.Controls.Add(this.CTlabelname);
             this.Controls.Add(this.CTtitle);
-            this.Name = "Form1";
+            this.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Name = "CTF";
             this.Text = "COVID CTF";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CTqrcodebox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,17 +353,23 @@
         private Label CTlabelnumber;
         private Label CTlabelemail;
         private Label CTlabelsex;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox nametextbox;
+        private TextBox datetextbox;
+        private TextBox numbertextbox;
+        private TextBox emailtextbox;
         private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
         private CheckBox checkBox1;
         private CheckBox checkBox2;
-        private PictureBox pictureBox1;
-        private Button button1;
+        private PictureBox CTqrcodebox;
+        private Button CTqrcodebutton;
+        private Button CTclearbutton;
+        private Button CTsavebutton;
+        private Button CTexitbutton;
+        private Label CTlabelage;
+        private TextBox agetextbox;
+        private Label label6;
     }
 }

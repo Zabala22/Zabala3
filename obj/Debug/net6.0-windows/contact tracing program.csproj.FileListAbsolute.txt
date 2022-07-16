@@ -4,7 +4,6 @@ C:\Users\Adie\source\repos\contact tracing program\bin\Debug\net6.0-windows\cont
 C:\Users\Adie\source\repos\contact tracing program\bin\Debug\net6.0-windows\contact tracing program.dll
 C:\Users\Adie\source\repos\contact tracing program\bin\Debug\net6.0-windows\contact tracing program.pdb
 C:\Users\Adie\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.csproj.AssemblyReference.cache
-C:\Users\Adie\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact_tracing_program.Form1.resources
 C:\Users\Adie\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.csproj.GenerateResource.cache
 C:\Users\Adie\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Adie\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.AssemblyInfoInputs.cache
@@ -15,3 +14,5 @@ C:\Users\Adie\source\repos\contact tracing program\obj\Debug\net6.0-windows\refi
 C:\Users\Adie\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.pdb
 C:\Users\Adie\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.genruntimeconfig.cache
 C:\Users\Adie\source\repos\contact tracing program\obj\Debug\net6.0-windows\ref\contact tracing program.dll
+C:\Users\Adie\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact_tracing_program.CTF.resources
+C:\Users\Adie\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact_tracing_program.Properties.Resources.resources
