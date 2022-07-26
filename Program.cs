@@ -11,7 +11,9 @@ namespace contact_tracing_program
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new CTF());
+            CTF1 CTF1 = new CTF1();
+            CTF1.Show();
+            Application.Run();
         }
     }
 }

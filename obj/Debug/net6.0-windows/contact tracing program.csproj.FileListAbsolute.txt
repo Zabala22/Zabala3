@@ -40,7 +40,6 @@ C:\Users\zabal\source\repos\contact tracing program\bin\Debug\net6.0-windows\con
 C:\Users\zabal\source\repos\contact tracing program\bin\Debug\net6.0-windows\contact tracing program.dll
 C:\Users\zabal\source\repos\contact tracing program\bin\Debug\net6.0-windows\contact tracing program.pdb
 C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.csproj.AssemblyReference.cache
-C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact_tracing_program.CTF.resources
 C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact_tracing_program.Properties.Resources.resources
 C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.csproj.GenerateResource.cache
 C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.GeneratedMSBuildEditorConfig.editorconfig
@@ -52,3 +51,5 @@ C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\ref
 C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.pdb
 C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.genruntimeconfig.cache
 C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\ref\contact tracing program.dll
+C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact_tracing_program.CTF1.resources
+C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact_tracing_program.Form2.resources

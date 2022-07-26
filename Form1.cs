@@ -2,9 +2,9 @@ using System.IO;
 
 namespace contact_tracing_program
 {
-    public partial class CTF : Form
+    public partial class CTF1 : Form
     {
-        public CTF()
+        public CTF1()
         {
             InitializeComponent();
         }
@@ -71,6 +71,11 @@ namespace contact_tracing_program
             outputFile.WriteLine();
             outputFile.Close();
 
+            // input names to listbox
+            Form2 CTF2 = new Form2();
+            CTF2.Show();
+            Close();
+
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
@@ -82,5 +87,23 @@ namespace contact_tracing_program
         {
             Application.Exit();
         }
+
+        private void CTF_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CTuserdatabutton_Click(object sender, EventArgs e)
+        {
+            Form2 CTF2 = new Form2();
+            CTF2.Show();
+            Close();
+          
+            
+
+        
+       
+                
+            }
+        }
     }
-}

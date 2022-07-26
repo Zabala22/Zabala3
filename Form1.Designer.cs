@@ -1,6 +1,6 @@
 ﻿namespace contact_tracing_program
 {
-    partial class CTF
+    partial class CTF1
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CTF));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CTF1));
             this.CTtitle = new System.Windows.Forms.Label();
             this.CTlabelname = new System.Windows.Forms.Label();
             this.CTlabeldate = new System.Windows.Forms.Label();
@@ -53,6 +53,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.CTuserdatabutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.CTqrcodebox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -310,13 +311,24 @@
             this.radioButton2.UseVisualStyleBackColor = false;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
-            // CTF
+            // CTuserdatabutton
+            // 
+            this.CTuserdatabutton.Location = new System.Drawing.Point(32, 455);
+            this.CTuserdatabutton.Name = "CTuserdatabutton";
+            this.CTuserdatabutton.Size = new System.Drawing.Size(238, 23);
+            this.CTuserdatabutton.TabIndex = 26;
+            this.CTuserdatabutton.Text = "User Data";
+            this.CTuserdatabutton.UseVisualStyleBackColor = true;
+            this.CTuserdatabutton.Click += new System.EventHandler(this.CTuserdatabutton_Click);
+            // 
+            // CTF1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(589, 541);
+            this.Controls.Add(this.CTuserdatabutton);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label6);
@@ -342,8 +354,9 @@
             this.Controls.Add(this.CTlabelname);
             this.Controls.Add(this.CTtitle);
             this.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Name = "CTF";
+            this.Name = "CTF1";
             this.Text = "COVID CTF";
+            this.Load += new System.EventHandler(this.CTF_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CTqrcodebox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -376,5 +389,6 @@
         private Label label6;
         private RadioButton radioButton1;
         private RadioButton radioButton2;
+        private Button CTuserdatabutton;
     }
 }
