@@ -16,6 +16,18 @@ namespace contact_tracing_program
         public Form2()
         {
             InitializeComponent();
+            string namelist = @"C:\Users\zabal\Documents\Contact Tracing Files\FILE RECORDS.txt";
+
+            //string[] lines = File.ReadAllLines(filepath);
+
+            List<string> lines = new List<string>();
+            lines = File.ReadAllLines(namelist).ToList();
+
+            foreach (String line in lines)
+            {
+                Console.WriteLine(line);
+            }
+                Console.ReadLine();
         }
        
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

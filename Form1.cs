@@ -4,9 +4,11 @@ namespace contact_tracing_program
 {
     public partial class CTF1 : Form
     {
+
         public CTF1()
         {
             InitializeComponent();
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -71,7 +73,7 @@ namespace contact_tracing_program
             outputFile.WriteLine();
             outputFile.Close();
 
-            // input names to listbox
+            //opening form2 to automatically see listed names
             Form2 CTF2 = new Form2();
             CTF2.Show();
             Close();
@@ -95,6 +97,7 @@ namespace contact_tracing_program
 
         private void CTuserdatabutton_Click(object sender, EventArgs e)
         {
+            // directly go to listed names
             Form2 CTF2 = new Form2();
             CTF2.Show();
             Close();
