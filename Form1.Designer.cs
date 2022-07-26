@@ -43,8 +43,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.CTqrcodebox = new System.Windows.Forms.PictureBox();
             this.CTqrcodebutton = new System.Windows.Forms.Button();
             this.CTclearbutton = new System.Windows.Forms.Button();
@@ -53,6 +51,8 @@
             this.CTlabelage = new System.Windows.Forms.Label();
             this.agetextbox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.CTqrcodebox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -203,28 +203,6 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "MM/DD/YYYY";
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Location = new System.Drawing.Point(35, 346);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(58, 20);
-            this.checkBox1.TabIndex = 14;
-            this.checkBox1.Text = "Male";
-            this.checkBox1.UseVisualStyleBackColor = false;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox2.Location = new System.Drawing.Point(132, 346);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(74, 20);
-            this.checkBox2.TabIndex = 15;
-            this.checkBox2.Text = "Female";
-            this.checkBox2.UseVisualStyleBackColor = false;
-            // 
             // CTqrcodebox
             // 
             this.CTqrcodebox.BackColor = System.Drawing.SystemColors.Control;
@@ -265,6 +243,7 @@
             this.CTsavebutton.TabIndex = 19;
             this.CTsavebutton.Text = "Save";
             this.CTsavebutton.UseVisualStyleBackColor = true;
+            this.CTsavebutton.Click += new System.EventHandler(this.CTsavebutton_Click);
             // 
             // CTexitbutton
             // 
@@ -305,6 +284,31 @@
             this.label6.TabIndex = 23;
             this.label6.Text = "00 years old";
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton1.Location = new System.Drawing.Point(36, 345);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(57, 20);
+            this.radioButton1.TabIndex = 24;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Male";
+            this.radioButton1.UseVisualStyleBackColor = false;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
+            this.radioButton2.Location = new System.Drawing.Point(131, 345);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(73, 20);
+            this.radioButton2.TabIndex = 25;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Female";
+            this.radioButton2.UseVisualStyleBackColor = false;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
             // CTF
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -312,6 +316,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(589, 541);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.agetextbox);
             this.Controls.Add(this.CTlabelage);
@@ -320,8 +326,6 @@
             this.Controls.Add(this.CTclearbutton);
             this.Controls.Add(this.CTqrcodebutton);
             this.Controls.Add(this.CTqrcodebox);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -361,8 +365,6 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private CheckBox checkBox1;
-        private CheckBox checkBox2;
         private PictureBox CTqrcodebox;
         private Button CTqrcodebutton;
         private Button CTclearbutton;
@@ -371,5 +373,7 @@
         private Label CTlabelage;
         private TextBox agetextbox;
         private Label label6;
+        private RadioButton radioButton1;
+        private RadioButton radioButton2;
     }
 }
