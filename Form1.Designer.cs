@@ -253,6 +253,7 @@
             this.CTexitbutton.TabIndex = 20;
             this.CTexitbutton.Text = "Exit";
             this.CTexitbutton.UseVisualStyleBackColor = true;
+            this.CTexitbutton.Click += new System.EventHandler(this.CTexitbutton_Click);
             // 
             // CTlabelage
             // 

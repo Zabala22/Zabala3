@@ -31,7 +31,13 @@ namespace contact_tracing_program
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            nametextbox.Text = "";
+            agetextbox.Text = "";
+            emailtextbox.Text = "";
+            numbertextbox.Text = "";
+            datetextbox.Text = "";
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -70,6 +76,11 @@ namespace contact_tracing_program
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void CTexitbutton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

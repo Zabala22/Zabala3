@@ -34,3 +34,21 @@ D:\Users\Adie\source\repos\contact tracing program\obj\Debug\net6.0-windows\refi
 D:\Users\Adie\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.pdb
 D:\Users\Adie\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.genruntimeconfig.cache
 D:\Users\Adie\source\repos\contact tracing program\obj\Debug\net6.0-windows\ref\contact tracing program.dll
+C:\Users\zabal\source\repos\contact tracing program\bin\Debug\net6.0-windows\contact tracing program.exe
+C:\Users\zabal\source\repos\contact tracing program\bin\Debug\net6.0-windows\contact tracing program.deps.json
+C:\Users\zabal\source\repos\contact tracing program\bin\Debug\net6.0-windows\contact tracing program.runtimeconfig.json
+C:\Users\zabal\source\repos\contact tracing program\bin\Debug\net6.0-windows\contact tracing program.dll
+C:\Users\zabal\source\repos\contact tracing program\bin\Debug\net6.0-windows\contact tracing program.pdb
+C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.csproj.AssemblyReference.cache
+C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact_tracing_program.CTF.resources
+C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact_tracing_program.Properties.Resources.resources
+C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.csproj.GenerateResource.cache
+C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.AssemblyInfoInputs.cache
+C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.AssemblyInfo.cs
+C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.csproj.CoreCompileInputs.cache
+C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.dll
+C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\refint\contact tracing program.dll
+C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.pdb
+C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.genruntimeconfig.cache
+C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\ref\contact tracing program.dll
