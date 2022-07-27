@@ -43,8 +43,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.CTqrcodebox = new System.Windows.Forms.PictureBox();
-            this.CTqrcodebutton = new System.Windows.Forms.Button();
             this.CTclearbutton = new System.Windows.Forms.Button();
             this.CTsavebutton = new System.Windows.Forms.Button();
             this.CTexitbutton = new System.Windows.Forms.Button();
@@ -56,7 +54,7 @@
             this.CTlistbox = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.CTlabel1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.CTqrcodebox)).BeginInit();
+            this.CTqrcodeloginbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CTtitle
@@ -206,30 +204,10 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "MM/DD/YYYY";
             // 
-            // CTqrcodebox
-            // 
-            this.CTqrcodebox.BackColor = System.Drawing.SystemColors.Control;
-            this.CTqrcodebox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.CTqrcodebox.Location = new System.Drawing.Point(313, 251);
-            this.CTqrcodebox.Name = "CTqrcodebox";
-            this.CTqrcodebox.Size = new System.Drawing.Size(245, 216);
-            this.CTqrcodebox.TabIndex = 16;
-            this.CTqrcodebox.TabStop = false;
-            // 
-            // CTqrcodebutton
-            // 
-            this.CTqrcodebutton.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CTqrcodebutton.Location = new System.Drawing.Point(366, 485);
-            this.CTqrcodebutton.Name = "CTqrcodebutton";
-            this.CTqrcodebutton.Size = new System.Drawing.Size(144, 25);
-            this.CTqrcodebutton.TabIndex = 17;
-            this.CTqrcodebutton.Text = "Generate QR Code";
-            this.CTqrcodebutton.UseVisualStyleBackColor = true;
-            // 
             // CTclearbutton
             // 
             this.CTclearbutton.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CTclearbutton.Location = new System.Drawing.Point(117, 386);
+            this.CTclearbutton.Location = new System.Drawing.Point(401, 342);
             this.CTclearbutton.Name = "CTclearbutton";
             this.CTclearbutton.Size = new System.Drawing.Size(68, 23);
             this.CTclearbutton.TabIndex = 18;
@@ -240,7 +218,7 @@
             // CTsavebutton
             // 
             this.CTsavebutton.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CTsavebutton.Location = new System.Drawing.Point(32, 386);
+            this.CTsavebutton.Location = new System.Drawing.Point(316, 342);
             this.CTsavebutton.Name = "CTsavebutton";
             this.CTsavebutton.Size = new System.Drawing.Size(68, 23);
             this.CTsavebutton.TabIndex = 19;
@@ -250,7 +228,7 @@
             // 
             // CTexitbutton
             // 
-            this.CTexitbutton.Location = new System.Drawing.Point(202, 386);
+            this.CTexitbutton.Location = new System.Drawing.Point(486, 342);
             this.CTexitbutton.Name = "CTexitbutton";
             this.CTexitbutton.Size = new System.Drawing.Size(68, 23);
             this.CTexitbutton.TabIndex = 20;
@@ -317,9 +295,9 @@
             // 
             this.CTlistbox.FormattingEnabled = true;
             this.CTlistbox.ItemHeight = 16;
-            this.CTlistbox.Location = new System.Drawing.Point(32, 447);
+            this.CTlistbox.Location = new System.Drawing.Point(313, 272);
             this.CTlistbox.Name = "CTlistbox";
-            this.CTlistbox.Size = new System.Drawing.Size(238, 20);
+            this.CTlistbox.Size = new System.Drawing.Size(245, 20);
             this.CTlistbox.TabIndex = 27;
             this.CTlistbox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             this.CTlistbox.DoubleClick += new System.EventHandler(this.CTlistbox_DoubleClick);
@@ -329,7 +307,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(32, 470);
+            this.label5.Location = new System.Drawing.Point(313, 295);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(41, 12);
             this.label5.TabIndex = 28;
@@ -340,11 +318,20 @@
             this.CTlabel1.AutoSize = true;
             this.CTlabel1.BackColor = System.Drawing.Color.Transparent;
             this.CTlabel1.Font = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CTlabel1.Location = new System.Drawing.Point(70, 470);
+            this.CTlabel1.Location = new System.Drawing.Point(351, 295);
             this.CTlabel1.Name = "CTlabel1";
             this.CTlabel1.Size = new System.Drawing.Size(30, 12);
             this.CTlabel1.TabIndex = 29;
             this.CTlabel1.Text = "Name";
+            // 
+            // CTqrcodeloginbutton
+            // 
+            this.CTqrcodeloginbutton.Location = new System.Drawing.Point(187, 439);
+            this.CTqrcodeloginbutton.Name = "CTqrcodeloginbutton";
+            this.CTqrcodeloginbutton.Size = new System.Drawing.Size(206, 23);
+            this.CTqrcodeloginbutton.TabIndex = 30;
+            this.CTqrcodeloginbutton.Text = "Log in using QR code";
+            this.CTqrcodeloginbutton.UseVisualStyleBackColor = true;
             // 
             // CTF1
             // 
@@ -353,6 +340,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(589, 541);
+            this.Controls.Add(this.CTqrcodeloginbutton);
             this.Controls.Add(this.CTlabel1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.CTlistbox);
@@ -364,8 +352,6 @@
             this.Controls.Add(this.CTexitbutton);
             this.Controls.Add(this.CTsavebutton);
             this.Controls.Add(this.CTclearbutton);
-            this.Controls.Add(this.CTqrcodebutton);
-            this.Controls.Add(this.CTqrcodebox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -384,7 +370,6 @@
             this.Name = "CTF1";
             this.Text = "COVID CTF";
             this.Load += new System.EventHandler(this.CTF_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.CTqrcodebox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -406,8 +391,6 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private PictureBox CTqrcodebox;
-        private Button CTqrcodebutton;
         private Button CTclearbutton;
         private Button CTsavebutton;
         private Button CTexitbutton;
@@ -419,5 +402,6 @@
         private ListBox CTlistbox;
         private Label label5;
         private Label CTlabel1;
+        private Button CTqrcodeloginbutton;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QRCoder;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,7 +26,15 @@ namespace contact_tracing_program
 
         private void Form2_Load_1(object sender, EventArgs e)
         {
-            CTinfobox.Text = CTF1.name;
+            CTFinfobox.Text = CTF1.name;
+        }
+
+        private void CTgenerateqrcodebutton_Click(object sender, EventArgs e)
+        {
+            QRCodeGenerator qr = new QRCodeGenerator();
+            QRCodeData data = qr.CreateQrCode(CTFinfobox.Text, QRCodeGenerator.ECCLevel.Q);
+            QRCode code = new QRCode(data);
+            CTpicturebox.Image = code.GetGraphic(5);
         }
     }
 }
