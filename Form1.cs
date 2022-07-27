@@ -77,7 +77,6 @@ namespace contact_tracing_program
             if (string.IsNullOrEmpty(nametextbox.Text))
                 return;
             CTlistbox.Items.Add(nametextbox.Text);
-            nametextbox.Clear();
             nametextbox.Focus();
 
         }
