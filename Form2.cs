@@ -36,5 +36,26 @@ namespace contact_tracing_program
             QRCode code = new QRCode(data);
             CTpicturebox.Image = code.GetGraphic(5);
         }
+
+        private void CTsaveqrcodebutton_Click(object sender, EventArgs e)
+        {
+            string initialDIR = @"C:\Users\zabal\Documents\Contact Tracing Files";
+            var dialog = new SaveFileDialog();
+            dialog.InitialDirectory = initialDIR;
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                CTpicturebox.Image.Save(dialog.FileName);
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CTexitbutton2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
