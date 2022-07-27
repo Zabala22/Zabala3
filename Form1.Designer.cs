@@ -54,6 +54,9 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.CTuserdatabutton = new System.Windows.Forms.Button();
+            this.CTlistbox = new System.Windows.Forms.ListBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.CTlabel1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.CTqrcodebox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -217,7 +220,7 @@
             // CTqrcodebutton
             // 
             this.CTqrcodebutton.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CTqrcodebutton.Location = new System.Drawing.Point(365, 473);
+            this.CTqrcodebutton.Location = new System.Drawing.Point(366, 485);
             this.CTqrcodebutton.Name = "CTqrcodebutton";
             this.CTqrcodebutton.Size = new System.Drawing.Size(144, 25);
             this.CTqrcodebutton.TabIndex = 17;
@@ -227,7 +230,7 @@
             // CTclearbutton
             // 
             this.CTclearbutton.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CTclearbutton.Location = new System.Drawing.Point(117, 405);
+            this.CTclearbutton.Location = new System.Drawing.Point(117, 386);
             this.CTclearbutton.Name = "CTclearbutton";
             this.CTclearbutton.Size = new System.Drawing.Size(68, 23);
             this.CTclearbutton.TabIndex = 18;
@@ -238,7 +241,7 @@
             // CTsavebutton
             // 
             this.CTsavebutton.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.CTsavebutton.Location = new System.Drawing.Point(32, 405);
+            this.CTsavebutton.Location = new System.Drawing.Point(32, 386);
             this.CTsavebutton.Name = "CTsavebutton";
             this.CTsavebutton.Size = new System.Drawing.Size(68, 23);
             this.CTsavebutton.TabIndex = 19;
@@ -248,7 +251,7 @@
             // 
             // CTexitbutton
             // 
-            this.CTexitbutton.Location = new System.Drawing.Point(202, 405);
+            this.CTexitbutton.Location = new System.Drawing.Point(202, 386);
             this.CTexitbutton.Name = "CTexitbutton";
             this.CTexitbutton.Size = new System.Drawing.Size(68, 23);
             this.CTexitbutton.TabIndex = 20;
@@ -313,13 +316,43 @@
             // 
             // CTuserdatabutton
             // 
-            this.CTuserdatabutton.Location = new System.Drawing.Point(32, 455);
+            this.CTuserdatabutton.Location = new System.Drawing.Point(32, 415);
             this.CTuserdatabutton.Name = "CTuserdatabutton";
             this.CTuserdatabutton.Size = new System.Drawing.Size(238, 23);
             this.CTuserdatabutton.TabIndex = 26;
             this.CTuserdatabutton.Text = "User Data";
             this.CTuserdatabutton.UseVisualStyleBackColor = true;
-            this.CTuserdatabutton.Click += new System.EventHandler(this.CTuserdatabutton_Click);
+            this.CTuserdatabutton.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // CTlistbox
+            // 
+            this.CTlistbox.FormattingEnabled = true;
+            this.CTlistbox.ItemHeight = 16;
+            this.CTlistbox.Location = new System.Drawing.Point(32, 464);
+            this.CTlistbox.Name = "CTlistbox";
+            this.CTlistbox.Size = new System.Drawing.Size(238, 20);
+            this.CTlistbox.TabIndex = 27;
+            this.CTlistbox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Location = new System.Drawing.Point(32, 494);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(79, 16);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Selected:";
+            // 
+            // CTlabel1
+            // 
+            this.CTlabel1.AutoSize = true;
+            this.CTlabel1.BackColor = System.Drawing.Color.Transparent;
+            this.CTlabel1.Location = new System.Drawing.Point(107, 494);
+            this.CTlabel1.Name = "CTlabel1";
+            this.CTlabel1.Size = new System.Drawing.Size(55, 16);
+            this.CTlabel1.TabIndex = 29;
+            this.CTlabel1.Text = "label7";
             // 
             // CTF1
             // 
@@ -328,6 +361,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(589, 541);
+            this.Controls.Add(this.CTlabel1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.CTlistbox);
             this.Controls.Add(this.CTuserdatabutton);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
@@ -390,5 +426,8 @@
         private RadioButton radioButton1;
         private RadioButton radioButton2;
         private Button CTuserdatabutton;
+        private ListBox CTlistbox;
+        private Label label5;
+        private Label CTlabel1;
     }
 }

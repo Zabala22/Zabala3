@@ -4,6 +4,7 @@ namespace contact_tracing_program
 {
     public partial class CTF1 : Form
     {
+        
 
         public CTF1()
         {
@@ -73,10 +74,11 @@ namespace contact_tracing_program
             outputFile.WriteLine();
             outputFile.Close();
 
-            //opening form2 to automatically see listed names
-            Form2 CTF2 = new Form2();
-            CTF2.Show();
-            Close();
+            if (string.IsNullOrEmpty(nametextbox.Text))
+                return;
+            CTlistbox.Items.Add(nametextbox.Text);
+            nametextbox.Clear();
+            nametextbox.Focus();
 
         }
 
@@ -95,18 +97,16 @@ namespace contact_tracing_program
 
         }
 
-        private void CTuserdatabutton_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            // directly go to listed names
             Form2 CTF2 = new Form2();
             CTF2.Show();
             Close();
-          
-            
-
-        
-       
-                
-            }
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CTlabel1.Text = CTlistbox.Text;
+        }
+    }
     }
