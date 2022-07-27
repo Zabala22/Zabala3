@@ -113,5 +113,12 @@ namespace contact_tracing_program
 
             // = Show(CTlabelname.Text + " " + nametextbox.Text + "\n" + CTlabelage.Text + " " + agetextbox.Text + "\n" + CTlabelemail.Text + " " + emailtextbox.Text + "\n" + CTlabelnumber.Text + numbertextbox.Text + "\n" + CTlabeldate.Text + datetextbox.Text);
         }
+
+        private void CTqrcodeloginbutton_Click(object sender, EventArgs e)
+        {
+            Form3 CTF3 = new Form3();
+            CTF3.Show();
+            Close();
+        }
     }
     }

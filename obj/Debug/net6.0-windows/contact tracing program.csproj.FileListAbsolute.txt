@@ -55,3 +55,8 @@ C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\con
 C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact_tracing_program.Form2.resources
 C:\Users\zabal\source\repos\contact tracing program\bin\Debug\net6.0-windows\QRCoder.dll
 C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact tracing program.csproj.CopyComplete
+C:\Users\zabal\source\repos\contact tracing program\obj\Debug\net6.0-windows\contact_tracing_program.Form3.resources
+C:\Users\zabal\source\repos\contact tracing program\bin\Debug\net6.0-windows\AForge.dll
+C:\Users\zabal\source\repos\contact tracing program\bin\Debug\net6.0-windows\AForge.Video.dll
+C:\Users\zabal\source\repos\contact tracing program\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
+C:\Users\zabal\source\repos\contact tracing program\bin\Debug\net6.0-windows\zxing.dll

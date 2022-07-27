@@ -332,6 +332,7 @@
             this.CTqrcodeloginbutton.TabIndex = 30;
             this.CTqrcodeloginbutton.Text = "Log in using QR code";
             this.CTqrcodeloginbutton.UseVisualStyleBackColor = true;
+            this.CTqrcodeloginbutton.Click += new System.EventHandler(this.CTqrcodeloginbutton_Click);
             // 
             // CTF1
             // 
