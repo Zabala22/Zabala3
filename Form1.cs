@@ -12,6 +12,7 @@ namespace contact_tracing_program
 
         }
 
+        public static string name;
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -96,16 +97,21 @@ namespace contact_tracing_program
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form2 CTF2 = new Form2();
-            CTF2.Show();
-            Close();
-        }
-
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             CTlabel1.Text = CTlistbox.Text;
+
+        }
+
+        private void CTlistbox_DoubleClick(object sender, EventArgs e)
+        {
+            name = CTlabelname.Text + " " + nametextbox.Text + "\n" + CTlabelage.Text + " " + agetextbox.Text + "\n" + CTlabelemail.Text + " " + emailtextbox.Text + "\n" + CTlabelnumber.Text + numbertextbox.Text + "\n" + CTlabeldate.Text + datetextbox.Text;
+
+            Form2 CTF2 = new Form2();
+            CTF2.Show();
+            Close();
+
+            // = Show(CTlabelname.Text + " " + nametextbox.Text + "\n" + CTlabelage.Text + " " + agetextbox.Text + "\n" + CTlabelemail.Text + " " + emailtextbox.Text + "\n" + CTlabelnumber.Text + numbertextbox.Text + "\n" + CTlabeldate.Text + datetextbox.Text);
         }
     }
     }

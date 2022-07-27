@@ -17,15 +17,15 @@ namespace contact_tracing_program
         {
             InitializeComponent();
         }
-       
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void Form2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form2_Load_1(object sender, EventArgs e)
+        {
+            CTinfobox.Text = CTF1.name;
         }
     }
 }

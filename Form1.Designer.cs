@@ -53,7 +53,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.CTuserdatabutton = new System.Windows.Forms.Button();
             this.CTlistbox = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.CTlabel1 = new System.Windows.Forms.Label();
@@ -314,33 +313,25 @@
             this.radioButton2.UseVisualStyleBackColor = false;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
-            // CTuserdatabutton
-            // 
-            this.CTuserdatabutton.Location = new System.Drawing.Point(32, 415);
-            this.CTuserdatabutton.Name = "CTuserdatabutton";
-            this.CTuserdatabutton.Size = new System.Drawing.Size(238, 23);
-            this.CTuserdatabutton.TabIndex = 26;
-            this.CTuserdatabutton.Text = "User Data";
-            this.CTuserdatabutton.UseVisualStyleBackColor = true;
-            this.CTuserdatabutton.Click += new System.EventHandler(this.button1_Click);
-            // 
             // CTlistbox
             // 
             this.CTlistbox.FormattingEnabled = true;
             this.CTlistbox.ItemHeight = 16;
-            this.CTlistbox.Location = new System.Drawing.Point(32, 464);
+            this.CTlistbox.Location = new System.Drawing.Point(32, 447);
             this.CTlistbox.Name = "CTlistbox";
             this.CTlistbox.Size = new System.Drawing.Size(238, 20);
             this.CTlistbox.TabIndex = 27;
             this.CTlistbox.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.CTlistbox.DoubleClick += new System.EventHandler(this.CTlistbox_DoubleClick);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(32, 494);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(32, 470);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 16);
+            this.label5.Size = new System.Drawing.Size(41, 12);
             this.label5.TabIndex = 28;
             this.label5.Text = "Selected:";
             // 
@@ -348,11 +339,12 @@
             // 
             this.CTlabel1.AutoSize = true;
             this.CTlabel1.BackColor = System.Drawing.Color.Transparent;
-            this.CTlabel1.Location = new System.Drawing.Point(107, 494);
+            this.CTlabel1.Font = new System.Drawing.Font("Segoe UI", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.CTlabel1.Location = new System.Drawing.Point(70, 470);
             this.CTlabel1.Name = "CTlabel1";
-            this.CTlabel1.Size = new System.Drawing.Size(55, 16);
+            this.CTlabel1.Size = new System.Drawing.Size(30, 12);
             this.CTlabel1.TabIndex = 29;
-            this.CTlabel1.Text = "label7";
+            this.CTlabel1.Text = "Name";
             // 
             // CTF1
             // 
@@ -364,7 +356,6 @@
             this.Controls.Add(this.CTlabel1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.CTlistbox);
-            this.Controls.Add(this.CTuserdatabutton);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.label6);
@@ -425,7 +416,6 @@
         private Label label6;
         private RadioButton radioButton1;
         private RadioButton radioButton2;
-        private Button CTuserdatabutton;
         private ListBox CTlistbox;
         private Label label5;
         private Label CTlabel1;
